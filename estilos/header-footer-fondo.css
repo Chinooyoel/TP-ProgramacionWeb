@@ -1,0 +1,191 @@
+/*RESETEAR ATRIBUTOS*/
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.ancho25
+{
+    width: 25%;
+}
+.ancho50
+{
+    width: 50%
+}
+.ancho100
+{
+    width: 100%;
+}
+/*--------------------HEADER------------*/
+header{
+    border: 2px solid black;
+    height: 80px;
+}
+header article
+{
+    float:left;
+    vertical-align: top;
+    height: 70px;
+    padding-top :8px;
+    text-align: center;
+}
+header img
+{
+    height: 90%;
+
+}
+.busqueda input
+{
+    width: 80%;
+    padding:6px;
+    border-radius: 4px;
+    margin-top: 8px;
+    border: 2px solid #666666;
+}
+
+/*------------------------------SECCION SLIDE -----------------*/
+.slide figure img{
+    width: 100%;
+    height: 600px;
+}
+
+#boton_slide_derecho
+{
+    position: absolute;
+    top:60%;
+    right: 30px;
+}
+#boton_slide_izquierdo
+{
+    position: absolute;
+    top:60%;
+    left: 30px;
+}
+
+/*------------------------------MENU NAV PRINCIPAL --------------*/
+.menu_principal ul{
+    background: black;
+    width: 100%;
+    text-align: center;
+}
+.menu_principal li
+{
+    background: black;
+    color : white;
+    list-style: none;
+    display: inline-block;
+}
+.menu_principal li a{
+    display:block;
+    text-align: center;
+    padding: 10px;
+    color:white;
+    text-decoration: none;
+}
+.menu_principal a:hover{
+    background: #666666;
+}
+
+/*------------------------SeccionPasos------------------*/
+.seccion_pasos
+{
+    display:flex;
+    justify-content: space-around;
+    margin:auto;
+    width: 80%;
+}
+.seccion_pasos article{
+    border: 2px solid black;
+    width: 30%;
+    padding: 20px;
+    height: 150px;
+}
+
+/*-----------------------SeccionEventos-------------*/
+h2
+{
+    text-align: center;
+}
+.iconocomprar
+{
+    width : 10px;
+    height: 15px;
+
+}
+.eventos_destacados
+{
+    min-width: 30%;
+} 
+.seccion_eventos
+{
+    display:flex;
+    width: 80%;
+    flex-wrap: wrap;
+    margin:auto;
+    text-align: center;
+}
+
+/*------------------------Seccion medios de pagos--------------*/
+.seccion_medios_pago
+{
+    display:flex;
+    width: 80%;
+    text-align: center;
+    margin:auto;
+}
+.medios_pago{
+    width: 20%;
+}
+.medios_pago img
+{
+    width: 90%;
+    height: 140px;
+}
+.iconos{
+    width: 60px;
+    height: 60px;
+    cursor:pointer;
+    height: auto;
+}
+/*-------------------------------FOOTER----------------*/
+.datos_grupo
+{
+    width: 30%;
+}
+
+
+.menu_inferior
+{
+    width: 40%;
+}
+.menu_inferior li{
+    list-style: none;
+    display: inline-block;
+
+}
+.menu_inferior li a{
+    color:white;
+    text-decoration: none;
+}
+.menu_inferior li a:hover{
+    color: grey;
+}
+
+.redes_sociales
+{
+    width: 30%;
+   
+}
+
+.formato_footer
+{
+    float:left;
+    height: 100px;
+    vertical-align: top;
+    text-align: center;
+    padding-top: 10px;
+    background: black;
+    color:white;
+}
