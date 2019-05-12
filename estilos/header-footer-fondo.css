@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
+    font-family: Bahnschrift;
 }
 
 .ancho25
@@ -18,10 +19,17 @@
 {
     width: 100%;
 }
+.contenedor
+{
+    max-width: 1200px;
+    margin:auto;
+}
+
+
 /*--------------------HEADER------------*/
 header{
-    border: 2px solid black;
     height: 80px;
+    margin:auto;
 }
 header article
 {
@@ -33,47 +41,44 @@ header article
 }
 header img
 {
-    height: 90%;
+    width: 60px;
 
 }
 .busqueda input
 {
     width: 80%;
+    background: #fffbe2;
     padding:6px;
     border-radius: 4px;
     margin-top: 8px;
+    border: 2px solid #eac04a;
+}
+.busqueda input:focus
+{
     border: 2px solid #666666;
 }
-
-/*------------------------------SECCION SLIDE -----------------*/
-.slide figure img{
-    width: 100%;
-    height: 600px;
-}
-
-#boton_slide_derecho
+#tickets_comprados
 {
-    position: absolute;
-    top:60%;
-    right: 30px;
+    background:red;
+    color:white;
+    width: 30px;
+    border-radius:50%; /*Para que sea redondo*/
+    position:absolute;
+    top: 0px;
+    padding: 3px;
+    font-size: 1.4em;
 }
-#boton_slide_izquierdo
-{
-    position: absolute;
-    top:60%;
-    left: 30px;
-}
+
 
 /*------------------------------MENU NAV PRINCIPAL --------------*/
 .menu_principal ul{
-    background: black;
+    background: #eac04a;
     width: 100%;
     text-align: center;
+    box-shadow: 3px 3px 10px #666666;
 }
 .menu_principal li
 {
-    background: black;
-    color : white;
     list-style: none;
     display: inline-block;
 }
@@ -81,75 +86,24 @@ header img
     display:block;
     text-align: center;
     padding: 10px;
-    color:white;
     text-decoration: none;
+    color:black;
 }
 .menu_principal a:hover{
-    background: #666666;
+    background: #d2a21b;
 }
 
-/*------------------------SeccionPasos------------------*/
-.seccion_pasos
-{
-    display:flex;
-    justify-content: space-around;
-    margin:auto;
-    width: 80%;
-}
-.seccion_pasos article{
-    border: 2px solid black;
-    width: 30%;
-    padding: 20px;
-    height: 150px;
-}
 
-/*-----------------------SeccionEventos-------------*/
-h2
-{
-    text-align: center;
-}
-.iconocomprar
-{
-    width : 10px;
-    height: 15px;
 
-}
-.eventos_destacados
-{
-    min-width: 30%;
-} 
-.seccion_eventos
-{
-    display:flex;
-    width: 80%;
-    flex-wrap: wrap;
-    margin:auto;
-    text-align: center;
-}
-
-/*------------------------Seccion medios de pagos--------------*/
-.seccion_medios_pago
-{
-    display:flex;
-    width: 80%;
-    text-align: center;
-    margin:auto;
-}
-.medios_pago{
-    width: 20%;
-}
-.medios_pago img
-{
-    width: 90%;
-    height: 140px;
-}
-.iconos{
-    width: 60px;
-    height: 60px;
-    cursor:pointer;
-    height: auto;
-}
 /*-------------------------------FOOTER----------------*/
+footer
+{
+    background-color:#383838;
+    width: 100%;
+    color:white;
+    overflow: hidden;
+    box-shadow: 0px -10px 10px -5px #666666;
+}
 .datos_grupo
 {
     width: 30%;
@@ -178,7 +132,9 @@ h2
     width: 30%;
    
 }
-
+.redes_sociales img{
+    height: 40px;
+}
 .formato_footer
 {
     float:left;
@@ -186,6 +142,4 @@ h2
     vertical-align: top;
     text-align: center;
     padding-top: 10px;
-    background: black;
-    color:white;
 }

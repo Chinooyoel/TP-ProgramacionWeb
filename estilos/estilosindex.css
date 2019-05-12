@@ -1,0 +1,103 @@
+/*------------------------------SECCION SLIDE -----------------*/
+.slide figure img{
+    width: 100%;
+    height: 90vh; /* Para que ocupe 90% de la ventana o pantalla donde se ve*/
+}
+
+#boton_slide_derecho
+{
+    position: absolute;
+    top:50%;
+    right: 30px;
+}
+#boton_slide_izquierdo
+{
+    position: absolute;
+    top:50%;
+    left: 30px;
+}
+
+/*------------------------SeccionPasos------------------*/
+.seccion_pasos
+{
+    display:flex;
+    justify-content: space-around;
+    margin:auto;
+    width: 80%;
+}
+.seccion_pasos article{
+    border: 2px solid black;
+    width: 30%;
+    padding: 20px;
+    height: 150px;
+}
+
+/*-----------------------SeccionEventos-------------*/
+h2
+{
+    text-align: center;
+}
+.iconocomprar
+{
+    width : 10px;
+    height: 15px;
+
+}
+.eventos_destacados
+{
+    width: 30%;
+    margin:auto;
+    border: 2px solid #666666;
+    margin:20px;
+    padding:10px;
+    border-radius: 10px;
+} 
+.eventos_destacados figure img
+{
+    width: 100%;
+    height: 230px;
+    box-shadow: 3px 3px 10px #666666;
+    opacity: 0.8;
+}
+.eventos_destacados figure img:hover
+{
+    opacity: 1.0;
+}
+.seccion_eventos
+{
+    display:flex;
+    width: 80%;
+    flex-wrap: wrap;
+    margin:auto;
+    text-align: center;
+}
+
+/*------------------------Seccion medios de pagos--------------*/
+.seccion_medios_pago
+{
+    display:flex;
+    width: 80%;
+    text-align: center;
+    margin:auto;
+}
+.medios_pago{
+    width: 20%;
+}
+.medios_pago img
+{
+    width: 90%;
+    height: 140px;
+}
+.iconos{
+    width: 60px;
+    height: 60px;
+    cursor:pointer;
+    opacity: 0.8;
+    background:#464646;
+    border-radius: 5px;
+    border: 3px solid #eac04a;
+
+}
+.iconos:hover {
+    opacity: 1;
+}

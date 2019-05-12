@@ -4,18 +4,20 @@
         <title>Inicio</title>
         <meta charset="UTF-8">
         <link href="./estilos/header-footer-fondo.css" rel="stylesheet">
+        <link href="./estilos/estilosindex.css" rel="stylesheet">
     </head>
     <body>
-        <header >
+        <header class="contenedor">
             <section>
                 <article class="ancho25 logo">
-                    <img src="./imgs/logo.jpg">
+                        <img src="./imgs/logo.jpg">
                 </article>
                 <article class="ancho50 busqueda">
                     <input type="text">
                 </article>
                 <article class="ancho25">
-                    <img src="./imgs/ticketicono.png">
+                        <img src="./imgs/ticketicono.png">
+                        <span id="tickets_comprados">0</span>
                 </article>
             </section>
         </header>
@@ -29,27 +31,26 @@
                     <li><a href="#">CONTACTO</a></li>                    
                 </ul>
         </nav>
-<br>
 
         <section class="slide">
             <figure>
-                <img src="imgs/logo.jpg">
+                <img src="imgs/concierto1.jpg">
             </figure>
-            <img src="imgs/ticketicono.png" class ="iconos" id="boton_slide_derecho">
-            <img src="imgs/ticketicono.png" class ="iconos" id="boton_slide_izquierdo">
+            <img src="imgs/iconoderecha.png" class ="iconos" id="boton_slide_derecho">
+            <img src="imgs/iconoizquierda.png" class ="iconos" id="boton_slide_izquierdo">
         </section>
 
-        <section class="seccion_pasos">
+        <section class="seccion_pasos contenedor">
             <article>PASO 1</article>
             <article>PASO 2</article>
             <article>PASO 3</article>
         </section>
         <br>
         <h2 >Eventos Destacados</h2>
-        <section class="seccion_eventos">
+        <section class="seccion_eventos contenedor">
             <article class="eventos_destacados">
                 <figure>
-                    <img src="./imgs/logo.jpg">
+                    <img src="./imgs/acdc.jpg">
                 </figure>
                 <span class = "date">
                     JUN<br>9
@@ -61,7 +62,7 @@
             </article>
             <article class="eventos_destacados">
                 <figure>
-                    <img src="./imgs/logo.jpg">
+                    <img src="./imgs/rhcp.jpg">
                 </figure>
                 <span class = "date">
                     JUN<br>9
@@ -73,7 +74,7 @@
             </article>
             <article class="eventos_destacados">
                 <figure>
-                    <img src="./imgs/logo.jpg">
+                    <img src="./imgs/brunomars.jpg">
                 </figure>
                 <span class = "date">
                     JUN<br>9
@@ -85,7 +86,7 @@
             </article>
             <article class="eventos_destacados">
                 <figure>
-                    <img src="./imgs/logo.jpg">
+                    <img src="./imgs/indio.jpg">
                 </figure>
                 <span class = "date">
                     JUN<br>9
@@ -97,7 +98,7 @@
             </article>
             <article class="eventos_destacados">
                 <figure>
-                    <img src="./imgs/logo.jpg">
+                    <img src="./imgs/arjona.jpg">
                 </figure>
                 <span class = "date">
                     JUN<br>9
@@ -109,7 +110,7 @@
             </article>
             <article class="eventos_destacados">
                 <figure>
-                    <img src="./imgs/logo.jpg">
+                    <img src="./imgs/imaginedragons.jpg">
                 </figure>
                 <span class = "date">
                     JUN<br>9
@@ -122,25 +123,25 @@
             
         </section>    
 
-        <section class="seccion_medios_pago">
+        <section class="seccion_medios_pago contenedor">
             <img src="imgs/ticketicono.png" class="iconos">
             <figure class="medios_pago">
-                <img src="imgs/logo.jpg">
+                <img src="imgs/visa.png">
             </figure>
             <figure class="medios_pago">
-                <img src="imgs/logo.jpg">
+                <img src="imgs/mastercard.png">
             </figure>
             <figure class="medios_pago">
-                <img src="imgs/logo.jpg">
+                <img src="imgs/pagofacil.png">
             </figure>
             <figure class="medios_pago">
-                <img src="imgs/logo.jpg">
+                <img src="imgs/paypal.png">
             </figure>
             <img src="imgs/ticketicono.png" class ="iconos">
 
         </section>
     <footer>
-            <section>
+            <section class="contenedor">
                 <article class="datos_grupo formato_footer">
                     <h3>Integrantes</h2>
                    <ul>
@@ -161,9 +162,17 @@
                 
                 <article class="redes_sociales formato_footer">
                     <h3>Redes Sociales</h2>
-                    <ul>
-                        <li>EventosUnlam</li>
-                    </ul>
+                    <figure>
+                        <a href="#">
+                            <img src="./imgs/facebook.png">
+                        </a>
+                        <a href="#">
+                            <img src="./imgs/twitter.png">
+                        </a>
+                        <a href="#">
+                            <img src="./imgs/instagram.png">
+                        </a>                       
+                    </figure>
                 </article>
             </section>
 
