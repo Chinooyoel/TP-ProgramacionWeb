@@ -1,167 +1,169 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Inicio</title>
-        <meta charset="UTF-8">
-        <link href="./estilos/header-footer-fondo.css" rel="stylesheet">
-        <link href="./estilos/estilosindex.css" rel="stylesheet">
-    </head>
-    <body>
-        <header class="contenedor">
-            <section>
-                <article class="ancho25 logo">
-                        <img src="./imgs/logo.jpg">
-                </article>
-                <article class="ancho50 busqueda">
-                    <input type="text">
-                </article>
-                <article class="ancho25">
-                        <img src="./imgs/ticketicono.png">
-                        <span id="tickets_comprados">0</span>
-                </article>
-            </section>
-        </header>
-        <nav class="menu_principal">
-                <ul >
+
+<head>
+    <title>Eventos Sociales</title>
+    <meta charset="UTF-8">
+    <link href="./estilos/header-footer-fondo.css" rel="stylesheet">
+    <link href="./estilos/estilosindex.css" rel="stylesheet">
+    <link rel="icon" href="./imgs/logo.ico">
+</head>
+
+<body>
+    <header class="contenedor">
+        <section>
+            <article class="ancho25 logo">
+                <img src="./imgs/logo.jpg">
+            </article>
+            <article class="ancho50 busqueda">
+                <input type="text">
+            </article>
+            <article class="ancho25">
+                <img src="./imgs/ticketicono.png">
+                <span id="tickets_comprados">0</span>
+            </article>
+        </section>
+    </header>
+    <nav class="menu_principal">
+        <ul>
+            <li><a href="#">INICIO</a></li>
+            <li><a href="#">EVENTO</a></li>
+            <li><a href="#">RESUMEN</a></li>
+            <li><a href="#">PERSONALIZACION</a></li>
+            <li><a href="#">INSCRIPCION</a></li>
+            <li><a href="#">CONTACTO</a></li>
+        </ul>
+    </nav>
+
+    <section class="slide">
+        <figure>
+            <img src="imgs/concierto1.jpg">
+        </figure>
+        <img src="imgs/iconoderecha.png" class="iconos" id="boton_slide_derecho">
+        <img src="imgs/iconoizquierda.png" class="iconos" id="boton_slide_izquierdo">
+    </section>
+
+    <section class="seccion_pasos contenedor">
+        <article>PASO 1</article>
+        <article>PASO 2</article>
+        <article>PASO 3</article>
+    </section>
+    <section class="seccion_eventos contenedor">
+        <h2>Eventos Destacados</h2>
+        <figure class="eventos_destacados">
+            <img src="./imgs/indio.jpg">
+            <figcaption>
+                <div class="date">
+                        JUN<br>9
+                </div>
+                <div class="detalle_evento">
+                    Nombre del Evento<br>
+                    <button class="botom">Comprar Ticket</button>
+                </div>
+            </figcaption>
+        </figure>
+        <figure class="eventos_destacados">
+            <img src="./imgs/rhcp.jpg">
+            <figcaption>
+                <div class="date">
+                        JUN<br>9
+                </div>
+                <div class="detalle_evento">
+                    Nombre del Evento<br>
+                    <button class="botom">Comprar Ticket</button>
+                </div>
+            </figcaption>
+        </figure>
+        <figure class="eventos_destacados">
+            <img src="./imgs/acdc.jpg">
+            <figcaption>
+                <div class="date">
+                        JUN<br>9
+                </div>
+                <div class="detalle_evento">
+                    Nombre del Evento<br>
+                    <button class="botom">Comprar Ticket</button>
+                </div>
+            </figcaption>
+        </figure>
+        <figure class="eventos_destacados">
+            <img src="./imgs/brunomars.jpg">
+            <figcaption>
+                <div class="date">
+                        JUN<br>9
+                </div>
+                <div class="detalle_evento">
+                    Nombre del Evento<br>
+                    <button class="botom">Comprar Ticket</button>
+                </div>
+            </figcaption>
+            </figure>
+        <figure class="eventos_destacados">
+            <img src="./imgs/imaginedragons.jpg">
+            <figcaption>
+                <div class="date">
+                        JUN<br>9
+                </div>
+                <div class="detalle_evento">
+                    Nombre del Evento<br>
+                    <button class="botom">Comprar Ticket</button>
+                </div>
+            </figcaption>
+        </figure>
+        <figure class="eventos_destacados">
+            <img src="./imgs/arjona.jpg">
+            <figcaption>
+                <div class="date">
+                        JUN<br>9
+                </div>
+                <div class="detalle_evento">
+                    Nombre del Evento<br>
+                    <button class="botom">Comprar Ticket</button>
+                </div>
+            </figcaption>
+        </figure>
+
+    </section>
+
+    <section class="seccion_medios_pago contenedor">
+        <img src="imgs/iconoizquierda.png" class="iconos">
+        <figure class="medios_pago">
+            <img src="imgs/visa.png">
+        </figure>
+        <figure class="medios_pago">
+            <img src="imgs/mastercard.png">
+        </figure>
+        <figure class="medios_pago">
+            <img src="imgs/pagofacil.png">
+        </figure>
+        <figure class="medios_pago">
+            <img src="imgs/paypal.png">
+        </figure>
+        <img src="imgs/iconoderecha.png" class="iconos">
+
+    </section>
+    <footer>
+        <section class="contenedor">
+            <article class="datos_grupo formato_footer">
+                <h3>Integrantes</h2>
+                    <ul>
+                        <li>Axel de Arias</li>
+                        <li>Carlos Yoel Carcamo Lopez</li>
+                    </ul>
+            </article>
+            <nav class="menu_inferior formato_footer">
+                <ul>
                     <li><a href="#">INICIO</a></li>
                     <li><a href="#">EVENTO</a></li>
                     <li><a href="#">RESUMEN</a></li>
                     <li><a href="#">PERSONALIZACION</a></li>
                     <li><a href="#">INSCRIPCION</a></li>
-                    <li><a href="#">CONTACTO</a></li>                    
+                    <li><a href="#">CONTACTO</a></li>
                 </ul>
-        </nav>
+            </nav>
 
-        <section class="slide">
-            <figure>
-                <img src="imgs/concierto1.jpg">
-            </figure>
-            <img src="imgs/iconoderecha.png" class ="iconos" id="boton_slide_derecho">
-            <img src="imgs/iconoizquierda.png" class ="iconos" id="boton_slide_izquierdo">
-        </section>
-
-        <section class="seccion_pasos contenedor">
-            <article>PASO 1</article>
-            <article>PASO 2</article>
-            <article>PASO 3</article>
-        </section>
-        <br>
-        <h2 >Eventos Destacados</h2>
-        <section class="seccion_eventos contenedor">
-            <article class="eventos_destacados">
-                <figure>
-                    <img src="./imgs/acdc.jpg">
-                </figure>
-                <span class = "date">
-                    JUN<br>9
-                </span>
-                <span class = "detalle_evento">
-                Nombre del Evento<br>
-                <img class= "iconocomprar" src="./imgs/ticketicono.png">
-                </span>
-            </article>
-            <article class="eventos_destacados">
-                <figure>
-                    <img src="./imgs/rhcp.jpg">
-                </figure>
-                <span class = "date">
-                    JUN<br>9
-                </span>
-                <span class = "detalle_evento">
-                Nombre del Evento<br>
-                <img class= "iconocomprar" src="./imgs/ticketicono.png">
-                </span>
-            </article>
-            <article class="eventos_destacados">
-                <figure>
-                    <img src="./imgs/brunomars.jpg">
-                </figure>
-                <span class = "date">
-                    JUN<br>9
-                </span>
-                <span class = "detalle_evento">
-                Nombre del Evento<br>
-                <img class= "iconocomprar" src="./imgs/ticketicono.png">
-                </span>
-            </article>
-            <article class="eventos_destacados">
-                <figure>
-                    <img src="./imgs/indio.jpg">
-                </figure>
-                <span class = "date">
-                    JUN<br>9
-                </span>
-                <span class = "detalle_evento">
-                Nombre del Evento<br>
-                <img class= "iconocomprar" src="./imgs/ticketicono.png">
-                </span>
-            </article>
-            <article class="eventos_destacados">
-                <figure>
-                    <img src="./imgs/arjona.jpg">
-                </figure>
-                <span class = "date">
-                    JUN<br>9
-                </span>
-                <span class = "detalle_evento">
-                Nombre del Evento<br>
-                <img class= "iconocomprar" src="./imgs/ticketicono.png">
-                </span>
-            </article>
-            <article class="eventos_destacados">
-                <figure>
-                    <img src="./imgs/imaginedragons.jpg">
-                </figure>
-                <span class = "date">
-                    JUN<br>9
-                </span>
-                <span class = "detalle_evento">
-                Nombre del Evento<br>
-                <img class= "iconocomprar" src="./imgs/ticketicono.png">
-                </span>
-            </article>            
-            
-        </section>    
-
-        <section class="seccion_medios_pago contenedor">
-            <img src="imgs/ticketicono.png" class="iconos">
-            <figure class="medios_pago">
-                <img src="imgs/visa.png">
-            </figure>
-            <figure class="medios_pago">
-                <img src="imgs/mastercard.png">
-            </figure>
-            <figure class="medios_pago">
-                <img src="imgs/pagofacil.png">
-            </figure>
-            <figure class="medios_pago">
-                <img src="imgs/paypal.png">
-            </figure>
-            <img src="imgs/ticketicono.png" class ="iconos">
-
-        </section>
-    <footer>
-            <section class="contenedor">
-                <article class="datos_grupo formato_footer">
-                    <h3>Integrantes</h2>
-                   <ul>
-                       <li>Axel de Arias</li>
-                       <li>Carlos Yoel Carcamo Lopez</li>
-                   </ul>
-                </article>
-                <nav class="menu_inferior formato_footer">
-                        <ul>
-                            <li><a href="#">INICIO</a></li>
-                            <li><a href="#">EVENTO</a></li>
-                            <li><a href="#">RESUMEN</a></li>
-                            <li><a href="#">PERSONALIZACION</a></li>
-                            <li><a href="#">INSCRIPCION</a></li>
-                            <li><a href="#">CONTACTO</a></li>
-                        </ul>
-                    </nav>
-                
-                <article class="redes_sociales formato_footer">
-                    <h3>Redes Sociales</h2>
+            <article class="redes_sociales formato_footer">
+                <h3>Redes Sociales</h2>
                     <figure>
                         <a href="#">
                             <img src="./imgs/facebook.png">
@@ -171,12 +173,16 @@
                         </a>
                         <a href="#">
                             <img src="./imgs/instagram.png">
-                        </a>                       
+                        </a>
+                        <a href="#">
+                            <img src="./imgs/youtube.png">
+                        </a>
                     </figure>
-                </article>
-            </section>
+            </article>
+        </section>
 
-        </footer>
+    </footer>
 
-    </body>
+</body>
+
 </html>
