@@ -146,3 +146,13 @@ footer {
     text-align: center;
     padding-top: 10px;
 }
+
+/* ----------------------clases generales------------------------------ */
+.botom
+{
+    background: #eac04a;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: 900; /*pone la letra en negrita*/
+    cursor:pointer;
+}

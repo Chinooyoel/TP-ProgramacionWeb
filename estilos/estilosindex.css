@@ -97,14 +97,6 @@ h2 {
     display: inline-block;  /*para que se ponga al lado con .date*/
 }
 
-.botom
-{
-    background: #eac04a;
-    padding: 5px;
-    border-radius: 10px;
-    font-weight: 900; /*pone la letra en negrita*/
-}
-
 /*------------------------Seccion medios de pagos--------------*/
 
 .seccion_medios_pago {
@@ -128,7 +120,7 @@ h2 {
 
 .medios_pago img {
     width: 90%;
-    height: 140px;
+    height: 100px;
 }
 
 .iconos {
