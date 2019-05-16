@@ -1,24 +1,25 @@
-h2 {
-    text-align: center;
-    width: 100%;
-}
-
 
 /*------------------------------SECCION SLIDE -----------------*/
 
-.slide figure img {
+.slide figure img 
+{
     width: 100%;
     height: 90vh;
     /* Para que ocupe 90% de la ventana o pantalla donde se ve*/
+
+    /*Para que no se pixelee la imagen al hacerse responsive*/
+    object-fit: cover;
 }
 
-#boton_slide_derecho {
+#boton_slide_derecho 
+{
     position: absolute;
     top: 50%;
     right: 30px;
 }
 
-#boton_slide_izquierdo {
+#boton_slide_izquierdo 
+{
     position: absolute;
     top: 50%;
     left: 30px;
@@ -27,8 +28,8 @@ h2 {
 
 /*------------------------SeccionPasos------------------*/
 
-.seccion_pasos {
-    width: 80%;
+.seccion_pasos 
+{
     margin-top: 50px;
 
     /* Propiedades FLEX */
@@ -37,7 +38,8 @@ h2 {
     justify-content: space-around;    
 }
 
-.seccion_pasos article {
+.seccion_pasos article 
+{
     border: 2px solid black;
     width: 30%;
     padding: 20px;
@@ -49,8 +51,8 @@ h2 {
 
 /*-----------------------SeccionEventos-------------*/
 
-.seccion_eventos {
-    width: 80%;
+.seccion_eventos 
+{
     margin-top: 50px;
 
     /* Propiedades FLEX */
@@ -60,12 +62,14 @@ h2 {
 
 }
 
-.iconocomprar {
+.iconocomprar 
+{
     width: 10px;
     height: 15px;
 }
 
-.eventos_destacados {
+.eventos_destacados 
+{
     min-width: 300px;
     width: 30%;
     border: 2px solid #666666;
@@ -75,14 +79,16 @@ h2 {
     text-align: center;
 }
 
-.eventos_destacados img {
+.eventos_destacados img 
+{
     width: 100%;
     height: 230px;
     box-shadow: 3px 3px 10px #666666;
     opacity: 0.8;
 }
 
-.eventos_destacados img:hover {
+.eventos_destacados img:hover 
+{
     opacity: 1.0;
 }
 .date
@@ -99,8 +105,8 @@ h2 {
 
 /*------------------------Seccion medios de pagos--------------*/
 
-.seccion_medios_pago {
-    width: 80%;
+.seccion_medios_pago 
+{
     margin-top: 50px;
 
 
@@ -114,25 +120,41 @@ h2 {
     /* y align-items para alinearlo VERTICALMENTE centrado */
 }
 
-.medios_pago {
+.medios_pago 
+{
     width: 20%;
 }
 
-.medios_pago img {
+.medios_pago img 
+{
     width: 90%;
     height: 100px;
 }
 
-.iconos {
-    width: 60px;
-    height: 60px;
-    cursor: pointer;
-    opacity: 0.8;
-    background: #464646;
-    border-radius: 5px;
-    border: 3px solid #eac04a;
+/*------------------------------------------RESPONSIVE----------------------------------*/
+@media (max-width: 1024px)
+{
+    .eventos_destacados
+    {
+        width: 40%;
+    }
+}
+@media (max-width: 768px)
+{
+    .eventos_destacados
+    {
+        width: 80%;
+    }
+    .seccion_pasos > article
+    {
+        width: 80%;
+    }
 }
 
-.iconos:hover {
-    opacity: 1;
+@media (max-width: 480px)
+{
+    .medios_pago img
+    {
+        height: 70px;
+    }
 }

@@ -4,12 +4,18 @@
 <head>
     <title>Eventos Sociales</title>
     <meta charset="UTF-8">
+    <!--meta viewport sirve para celulares, el width para que ocupe todo el ancho del viewport(pantalla)
+         y el initial-scale es el nivel de zoom que va atener la pagina cuando cargue-->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <link href="./estilos/header-footer-fondo.css" rel="stylesheet">
     <link href="./estilos/estilosindex.css" rel="stylesheet">
     <link rel="icon" href="./imgs/logo.ico">
+    
 </head>
 
 <body>
+
+   <!---------------------------------------INICIO HEADER------------------------------------------------->
     <header class="contenedor">
         <section>
             <article class="ancho25 logo">
@@ -24,6 +30,9 @@
             </article>
         </section>
     </header>
+    <!---------------------------------------FIN HEADER------------------------------------------------->
+
+    <!---------------------------------------INICIO NAV------------------------------------------------->
     <nav class="menu_principal">
         <ul>
             <li><a href="#">INICIO</a></li>
@@ -34,7 +43,9 @@
             <li><a href="#">CONTACTO</a></li>
         </ul>
     </nav>
+    <!---------------------------------------FIN NAV------------------------------------------------->
 
+    <!---------------------------------------INICIO SECCION SLIDE------------------------------------------------->
     <section class="slide">
         <figure>
             <img src="imgs/concierto1.jpg">
@@ -42,20 +53,25 @@
         <img src="imgs/iconoderecha.png" class="iconos" id="boton_slide_derecho">
         <img src="imgs/iconoizquierda.png" class="iconos" id="boton_slide_izquierdo">
     </section>
+    <!---------------------------------------FIN SECCION SLIDE------------------------------------------------->
 
+    <!---------------------------------------INICIO SECCION PASOS------------------------------------------------->
     <section class="seccion_pasos contenedor">
         <h2>Pasos para Comprar</h2>
         <article>PASO 1</article>
         <article>PASO 2</article>
         <article>PASO 3</article>
     </section>
+    <!---------------------------------------FIN SECCION PASOS------------------------------------------------->
+
+    <!---------------------------------------INICIO SECCION EVENTOS------------------------------------------------->
     <section class="seccion_eventos contenedor">
         <h2>Eventos Destacados</h2>
         <figure class="eventos_destacados">
             <img src="./imgs/indio.jpg">
             <figcaption>
                 <div class="date">
-                        JUN<br>9
+                    JUN<br>9
                 </div>
                 <div class="detalle_evento">
                     Indio Solari<br>
@@ -67,7 +83,7 @@
             <img src="./imgs/rhcp.jpg">
             <figcaption>
                 <div class="date">
-                        SEP<br>11
+                    SEP<br>11
                 </div>
                 <div class="detalle_evento">
                     Red Hoy Chili Peppers<br>
@@ -79,7 +95,7 @@
             <img src="./imgs/acdc.jpg">
             <figcaption>
                 <div class="date">
-                        JUL<br>27
+                    JUL<br>27
                 </div>
                 <div class="detalle_evento">
                     AC/DC<br>
@@ -91,7 +107,7 @@
             <img src="./imgs/brunomars.jpg">
             <figcaption>
                 <div class="date">
-                        FEB<br>3
+                    FEB<br>3
                 </div>
                 <div class="detalle_evento">
                     Bruno Mars<br>
@@ -103,7 +119,7 @@
             <img src="./imgs/imaginedragons.jpg">
             <figcaption>
                 <div class="date">
-                        DIC<br>1
+                    DIC<br>1
                 </div>
                 <div class="detalle_evento">
                     Imagine Dragons<br>
@@ -115,7 +131,7 @@
             <img src="./imgs/arjona.jpg">
             <figcaption>
                 <div class="date">
-                        AGO<br>20
+                    AGO<br>20
                 </div>
                 <div class="detalle_evento">
                     Ricardo Arjona<br>
@@ -125,7 +141,9 @@
         </figure>
 
     </section>
+    <!---------------------------------------FIN SECCION EVENTOS------------------------------------------------->
 
+    <!---------------------------------------INICIO MEDIOS DE PAGOS------------------------------------------------->
     <section class="seccion_medios_pago contenedor">
         <img src="imgs/iconoizquierda.png" class="iconos">
         <figure class="medios_pago">
@@ -140,9 +158,11 @@
         <figure class="medios_pago">
             <img src="imgs/paypal.png">
         </figure>
-        <img src="imgs/iconoderecha.png" class="iconos">
-
+            <img src="imgs/iconoderecha.png" class="iconos">
     </section>
+    <!---------------------------------------FIN MEDIOS DE PAGOS------------------------------------------------->
+
+    <!---------------------------------------INICIO DEL FOOTER------------------------------------------------->
     <footer>
         <section class="contenedor">
             <article class="datos_grupo formato_footer">
@@ -183,6 +203,7 @@
         </section>
 
     </footer>
+    <!---------------------------------------FIN DEL FOOTER------------------------------------------------->
 
 </body>
 
