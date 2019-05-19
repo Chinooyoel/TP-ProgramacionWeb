@@ -1,44 +1,46 @@
 
 /*------------------------------SECCION SLIDE -----------------*/
 
-.slide figure img 
+.imagen_principal
 {
     width: 100%;
-    height: 90vh;
     /* Para que ocupe 90% de la ventana o pantalla donde se ve*/
-
+    position: relative;
     /*Para que no se pixelee la imagen al hacerse responsive*/
     object-fit: cover;
 }
+.slide {
+position:relative;
 
-#boton_slide_derecho 
+}
+#boton_slide_derecho
 {
     position: absolute;
     top: 50%;
-    right: 30px;
+    right: 2%;
 }
 
-#boton_slide_izquierdo 
+#boton_slide_izquierdo
 {
     position: absolute;
     top: 50%;
-    left: 30px;
+    left: 2%;
 }
 
 
 /*------------------------SeccionPasos------------------*/
 
-.seccion_pasos 
+.seccion_pasos
 {
     margin-top: 50px;
 
     /* Propiedades FLEX */
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;    
+    justify-content: space-around;
 }
 
-.seccion_pasos article 
+.seccion_pasos article
 {
     border: 2px solid black;
     width: 30%;
@@ -51,7 +53,7 @@
 
 /*-----------------------SeccionEventos-------------*/
 
-.seccion_eventos 
+.seccion_eventos
 {
     margin-top: 50px;
 
@@ -62,13 +64,13 @@
 
 }
 
-.iconocomprar 
+.iconocomprar
 {
     width: 10px;
     height: 15px;
 }
 
-.eventos_destacados 
+.eventos_destacados
 {
     min-width: 300px;
     width: 30%;
@@ -79,15 +81,14 @@
     text-align: center;
 }
 
-.eventos_destacados img 
+.eventos_destacados img
 {
-    width: 100%;
-    height: 230px;
+    width : 100%;
     box-shadow: 3px 3px 10px #666666;
     opacity: 0.8;
 }
 
-.eventos_destacados img:hover 
+.eventos_destacados img:hover
 {
     opacity: 1.0;
 }
@@ -105,7 +106,7 @@
 
 /*------------------------Seccion medios de pagos--------------*/
 
-.seccion_medios_pago 
+.seccion_medios_pago
 {
     margin-top: 50px;
 
@@ -113,23 +114,21 @@
     /* Propiedades FLEX */
     display: flex;
     justify-content: space-around;
-    /* En flexbox en vez de usar texta-aling usamos la propiedad de flex justify-contend: center 
-    para alinearlo HORIZONTALMENTE central, aca igual use space-around para que se ajusten ocupando todo 
+    /* En flexbox en vez de usar texta-aling usamos la propiedad de flex justify-contend: center
+    para alinearlo HORIZONTALMENTE central, aca igual use space-around para que se ajusten ocupando todo
     el ancho*/
     align-items: center;
     /* y align-items para alinearlo VERTICALMENTE centrado */
 }
 
-.medios_pago 
-{
-    width: 20%;
-}
 
-.medios_pago img 
+
+.medios_pago img
 {
     width: 90%;
-    height: 100px;
+
 }
+
 
 /*------------------------------------------RESPONSIVE----------------------------------*/
 @media (max-width: 1024px)
@@ -141,6 +140,7 @@
 }
 @media (max-width: 768px)
 {
+
     .eventos_destacados
     {
         width: 80%;
