@@ -53,6 +53,7 @@ h2 {
     background: #464646;
     border-radius: 5px;
     border: 3px solid #eac04a;
+    margin : 4px;
 }
 
 .iconos:hover {
@@ -182,6 +183,11 @@ footer {
 
 @media (max-width: 768px)
 {
+  .iconos {
+      width: 40px;
+      height: 40px;
+
+  }
     .formato_footer
     {
         width: 100%;
