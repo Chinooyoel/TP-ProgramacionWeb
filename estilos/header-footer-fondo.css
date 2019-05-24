@@ -21,7 +21,8 @@
     max-width: 1200px;
     margin: auto;
 }
-input {
+input,
+textarea {
     width: 80%;
     background: #fffbe2;
     padding: 6px;

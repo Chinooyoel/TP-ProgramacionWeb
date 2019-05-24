@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Eventos Sociales</title>
+    <meta charset="UTF-8">
+    <!--meta viewport sirve para celulares, el width para que ocupe todo el ancho del viewport(pantalla)
+         y el initial-scale es el nivel de zoom que va atener la pagina cuando cargue-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./estilos/header-footer-fondo.css" rel="stylesheet">
+    <link href="./estilos/estiloscontacto.css" rel="stylesheet">
+    <link rel="icon" href="./imgs/logo.ico">
+
+</head>
+
+<body>
+
+   <!---------------------------------------INICIO HEADER------------------------------------------------->
+    <header class="contenedor">
+        <section>
+            <article class="ancho25 logo">
+                <img src="./imgs/logo.jpg">
+            </article>
+            <article class="ancho50 busqueda">
+                <input type="text">
+            </article>
+            <article class="ancho25">
+                <img src="./imgs/ticketicono.png">
+                <span id="tickets_comprados">0</span>
+            </article>
+        </section>
+    </header>
+    <!---------------------------------------FIN HEADER------------------------------------------------->
+
+    <!---------------------------------------INICIO NAV------------------------------------------------->
+    <nav class="menu_principal">
+        <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="#">EVENTO</a></li>
+            <li><a href="#">RESUMEN</a></li>
+            <li><a href="#">PERSONALIZACION</a></li>
+            <li><a href="#">INSCRIPCION</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+        </ul>
+    </nav>
+    <!---------------------------------------FIN NAV------------------------------------------------->
+    <section class="seccion_contacto contenedor">
+        <h2>Contacto</h2>
+        <article class="formulario">
+            <form>
+                <label>Nombre:</label>
+                <input type="text" placeholder="Ingrese su nombre aqui">
+                <label>Apellido:</label>
+                <input type="text" placeholder="Ingrese su apellido aqui">
+                <label>E-mail:</label>
+                <input type="email" placeholder="Ingrese su email aqui">
+                <label>Descripcion:</label>
+                <textarea placeholder="Descripcion aqui"></textarea>
+            </form>
+        </article>
+        <article class="info_empresa">
+            <p>Datos de contacto</p>
+        </article>
+    </section>
+
+    <section class="ubicacion contenedor">
+        <h2>Ubicacion</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.545424481879!2d-58.568013584328554!3d-34.640926066975815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7eff9e1e349%3A0x9b0c603039044574!2sAv.+de+Mayo%2C+Ramos+Mej%C3%ADa%2C+Buenos+Aires!5e0!3m2!1ses-419!2sar!4v1558670825704!5m2!1ses-419!2sar"  frameborder="0" style="border:0" allowfullscreen></iframe>
+    </section>
+
+
+        <!---------------------------------------INICIO DEL FOOTER------------------------------------------------->
+    <footer>
+        <section class="contenedor">
+            <article class="datos_grupo formato_footer">
+                <h3>Integrantes</h2>
+                    <ul>
+                        <li>Axel de Arias</li>
+                        <li>Carlos Yoel Carcamo Lopez</li>
+                    </ul>
+            </article>
+            <nav class="menu_inferior formato_footer">
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="#">EVENTO</a></li>
+                    <li><a href="#">RESUMEN</a></li>
+                    <li><a href="#">PERSONALIZACION</a></li>
+                    <li><a href="#">INSCRIPCION</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+
+            <article class="redes_sociales formato_footer">
+                <h3>Redes Sociales</h2>
+                    <figure>
+                        <a href="#">
+                            <img src="./imgs/facebook.png">
+                        </a>
+                        <a href="#">
+                            <img src="./imgs/twitter.png">
+                        </a>
+                        <a href="#">
+                            <img src="./imgs/instagram.png">
+                        </a>
+                        <a href="#">
+                            <img src="./imgs/youtube.png">
+                        </a>
+                    </figure>
+            </article>
+        </section>
+
+    </footer>
+    <!---------------------------------------FIN DEL FOOTER------------------------------------------------->
+
+</body>
+
+</html>
