@@ -1,0 +1,58 @@
+.evento_personalizado{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+.imagen{
+    background-color : grey;
+    width : 300px;
+    height : 300px;
+    position : relative;
+}
+.edicion{
+    width : 50%;
+    margin: 3px;
+}
+div.bloque_titulo{
+    position : absolute;
+    top : 45%;
+    width: 100%;
+    text-align: center;
+}
+div.bloque_fecha{
+    position: absolute;
+    bottom: 0px;
+    padding: 2%;
+    width: 100%;
+    text-align: end;
+}
+.opciones{
+    width:35px; 
+    display: inline-block;
+    margin: 10px;
+}
+.colores
+{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.rojo{
+    background: red;
+}
+.azul
+{
+background: blue;
+}
+.black
+{
+    background: black;
+}
+.amarillo
+{
+    background: yellow;
+}
+.naranja
+{
+    background: orange;
+}

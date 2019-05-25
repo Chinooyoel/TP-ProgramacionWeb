@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Eventos Sociales</title>
+    <meta charset="UTF-8">
+    <!--meta viewport sirve para celulares, el width para que ocupe todo el ancho del viewport(pantalla)
+         y el initial-scale es el nivel de zoom que va atener la pagina cuando cargue-->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link href="./estilos/header-footer-fondo.css" rel="stylesheet">
+    <link href="./estilos/estilosindex.css" rel="stylesheet">
+    <link href="./estilos/estilosevento.css" rel="stylesheet">
+    <link rel="icon" href="./imgs/logo.ico">
+    
+</head>
+
+<body>
+
+   <!---------------------------------------INICIO HEADER------------------------------------------------->
+    <header class="contenedor">
+        <section>
+            <article class="ancho25 logo">
+                <img src="./imgs/logo.jpg">
+            </article>
+            <article class="ancho50 busqueda">
+                <input type="text">
+            </article>
+            <article class="ancho25">
+                <img src="./imgs/ticketicono.png">
+                <span id="tickets_comprados">0</span>
+            </article>
+        </section>
+    </header>
+    <!---------------------------------------FIN HEADER------------------------------------------------->
+
+    <!---------------------------------------INICIO NAV------------------------------------------------->
+    <nav class="menu_principal">
+        <ul>
+            <li><a href="#">INICIO</a></li>
+            <li><a href="#">EVENTO</a></li>
+            <li><a href="#">RESUMEN</a></li>
+            <li><a href="#">PERSONALIZACION</a></li>
+            <li><a href="#">INSCRIPCION</a></li>
+            <li><a href="#">CONTACTO</a></li>
+        </ul>
+    </nav>
+    <!---------------------------------------FIN NAV------------------------------------------------->
+
+    <div class = "evento_personalizado">
+        <section class = "imagen">
+            <div class = "bloque_titulo">
+                <h2>TITULO</h2>
+                </span>
+            </div>
+            <div class = "bloque_fecha">
+                <h4>10 de junio de 2018,  18hs</h4>
+            </div>
+        </section>
+        <section class = "edicion">
+            <h3>Personalización de Invitación</h3>
+            <form>
+            <input type = "text" placeholder="Título Evento">
+            <div>
+                <div class="opciones">
+                    <div class="colores rojo">
+                    </div>
+                    <input type="radio" name ="color">
+                </div>
+                <div class="opciones">
+                    <div class="colores naranja">
+                    </div>
+                    <input type="radio" name ="color">
+                </div>
+                <div class="opciones">
+                    <div class="colores black">
+                    </div>
+                    <input type="radio" name ="color">
+                </div>
+                <div class="opciones">
+                    <div class="colores amarillo">
+                    </div>
+                    <input type="radio" name ="color">
+                </div>
+                <div class="opciones">
+                    <div class="colores azul">
+                    </div>
+                    <input type="radio" name ="color">
+                </div>
+            </div>
+            </form>
+        </section>
+
+    </div>
+    
+    <!---------------------------------------INICIO DEL FOOTER------------------------------------------------->
+    <footer>
+            <section class="contenedor">
+                <article class="datos_grupo formato_footer">
+                    <h3>Integrantes</h2>
+                        <ul>
+                            <li>Axel de Arias</li>
+                            <li>Carlos Yoel Carcamo Lopez</li>
+                        </ul>
+                </article>
+                <nav class="menu_inferior formato_footer">
+                    <ul>
+                        <li><a href="#">INICIO</a></li>
+                        <li><a href="#">EVENTO</a></li>
+                        <li><a href="#">RESUMEN</a></li>
+                        <li><a href="#">PERSONALIZACION</a></li>
+                        <li><a href="#">INSCRIPCION</a></li>
+                        <li><a href="#">CONTACTO</a></li>
+                    </ul>
+                </nav>
+    
+                <article class="redes_sociales formato_footer">
+                    <h3>Redes Sociales</h2>
+                        <figure>
+                            <a href="#">
+                                <img src="./imgs/facebook.png">
+                            </a>
+                            <a href="#">
+                                <img src="./imgs/twitter.png">
+                            </a>
+                            <a href="#">
+                                <img src="./imgs/instagram.png">
+                            </a>
+                            <a href="#">
+                                <img src="./imgs/youtube.png">
+                            </a>
+                        </figure>
+                </article>
+            </section>
+    
+        </footer>
+        <!---------------------------------------FIN DEL FOOTER------------------------------------------------->
+    
+    </body>
+    
+    </html>
