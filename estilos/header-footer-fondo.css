@@ -21,7 +21,8 @@
     max-width: 1200px;
     margin: auto;
 }
-input,
+
+input:not([type="submit"]) ,
 textarea {
     width: 80%;
     background: #fffbe2;
@@ -31,16 +32,22 @@ textarea {
     border: 2px solid #eac04a;
 }
 
+
 input:focus {
     border: 2px solid #666666;
 }
-.botom
+input[type="submit"], .botom
 {
     background: #eac04a;
+    border-color:  #eac04a;
     padding: 5px;
     border-radius: 10px;
     font-weight: 900; /*pone la letra en negrita*/
     cursor:pointer;
+    outline:none;
+}
+input[type="submit"]:active, .botom:active{
+    background: #af8307;
 }
 h2 {
     text-align: center;

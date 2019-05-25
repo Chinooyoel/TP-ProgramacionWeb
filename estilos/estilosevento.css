@@ -1,18 +1,31 @@
+#titulo{
+  font-size: 40px;
+}
 .evento_personalizado{
     display: flex;
-    flex-wrap: wrap;
-    margin: 20px;
+    justify-content: space-between;
+    margin: 10px;
+}
+.contenedor_izq{
+
+  width : 50%;
+  margin:2%;
+  text-align: center;
+
 }
 .imagen{
     background-color : grey;
-    width : 300px;
-    height : 300px;
+    min-width:400px;
+    height : 400px;
+    margin:auto;
     position : relative;
-}
+  }
 .edicion{
-    width : 50%;
-    margin: 3px;
+    padding: 10px;
+    width: 50%;
+    margin:auto;
 }
+
 div.bloque_titulo{
     position : absolute;
     top : 45%;
@@ -27,15 +40,24 @@ div.bloque_fecha{
     text-align: end;
 }
 .opciones{
-    width:35px; 
-    display: inline-block;
-    margin: 10px;
+  display: inline-block;
+  margin: 3px;
+  width: 35px;
+  text-align: center;
+
+}
+
+.opciones > img {
+  width: 35px;
 }
 .colores
 {
     width: 30px;
     height: 30px;
-    border-radius: 50%;
+}
+.border_radius{
+
+  border-radius: 50%;
 }
 .rojo{
     background: red;
@@ -55,4 +77,48 @@ background: blue;
 .naranja
 {
     background: orange;
+}
+.px20{
+  display: inline-block;
+  font-size: 10px;
+}
+
+.px28{
+  font-size: 12px;
+}
+
+.px32{
+  font-size: 14px;
+}
+
+.px48{
+  font-size: 16px;
+}
+
+.px60{
+  font-size: 18px;
+}
+.subtitulos{
+  font-size: 14px;
+  color: grey;
+}
+
+@media(max-width: 815px){
+  .evento_personalizado{
+      flex-wrap: wrap;
+  }
+  .edicion{
+    text-align: center;
+  }
+  .contenedor_izq{
+      width: 80%;
+      margin:auto;
+  }
+  .align_center{
+    width: 100%;
+  }
+  .edicion{
+    width: 100%;
+  }
+
 }
