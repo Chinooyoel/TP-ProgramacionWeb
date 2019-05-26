@@ -1,5 +1,5 @@
 #titulo{
-  font-size: 40px;
+  font-size: 60px;
 }
 .evento_personalizado{
     display: flex;
@@ -28,9 +28,14 @@
 
 div.bloque_titulo{
     position : absolute;
-    top : 45%;
+    top :50%;
+    transform: translate(0, -60%);
     width: 100%;
     text-align: center;
+}
+.margin_auto{
+  margin:auto;
+  color: red;
 }
 div.bloque_fecha{
     position: absolute;

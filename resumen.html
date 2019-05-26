@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Eventos Sociales</title>
+    <meta charset="UTF-8">
+    <!--meta viewport sirve para celulares, el width para que ocupe todo el ancho del viewport(pantalla)
+         y el initial-scale es el nivel de zoom que va atener la pagina cuando cargue-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./estilos/header-footer-fondo.css" rel="stylesheet">
+    <link href="./estilos/estilosindex.css" rel="stylesheet">
+    <link href="./estilos/estilosresumen.css" rel="stylesheet">
+    <link rel="icon" href="./imgs/logo.ico">
+
+</head>
+
+<body>
+
+   <!---------------------------------------INICIO HEADER------------------------------------------------->
+    <header class="contenedor">
+        <section>
+            <article class="ancho25 logo">
+                <img src="./imgs/logo.jpg">
+            </article>
+            <article class="ancho50 busqueda">
+                <input type="text">
+            </article>
+            <article class="ancho25">
+              <div class = "ticket_en_imagen">
+                <img src="./imgs/ticketicono.png">
+                <span id="tickets_comprados">0</span>
+              </div>
+
+            </article>
+        </section>
+    </header>
+    <!---------------------------------------FIN HEADER------------------------------------------------->
+
+    <!---------------------------------------INICIO NAV------------------------------------------------->
+    <nav class="menu_principal">
+        <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="evento.html">EVENTO</a></li>
+            <li><a href="resumen.html">RESUMEN</a></li>
+            <li><a href="personalizacion.html">PERSONALIZACION</a></li>
+            <li><a href="inscripcion.html">INSCRIPCION</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+          </ul>
+    </nav>
+    <!---------------------------------------FIN NAV------------------------------------------------->
+    <section class = "resumen">
+      <div class = "resumen_ppal">
+        <h3><br>RESUMEN DE ENTRADAS COMPRADAS</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Fecha</th>
+              <th>Titulo</th>
+              <th>Estado</th>
+              <th>Precio Unitario</th>
+              <th>Cantidad</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td></td>
+              <td><button class =  "personalizar">Personalizar</button></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td><button class =  "mod_personalizar" >Modificar <br> Personalización</button></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td><button class =  "personalizar">Personalizar</button></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td><button class =  "personalizar">Personalizar</button></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td><button class =  "mod_personalizar">Modificar <br> Personalización</button></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>$0000</td>
+            </tr>
+         <tbody>
+
+        </table>
+        <div class= "caja_botones">
+        <button  value="Seguir Comprando" class = "seguir" ><img src="./imgs/ticketicono.png"><p class="alineado"> Seguir Comprando</p></button>
+        <button class = "finalizar" >Finalizar COMPRA</button>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!---------------------------------------INICIO DEL FOOTER------------------------------------------------->
+    <footer>
+            <section class="contenedor">
+                <article class="datos_grupo formato_footer">
+                    <h3>Integrantes</h2>
+                        <ul>
+                            <li>Axel de Arias</li>
+                            <li>Carlos Yoel Carcamo Lopez</li>
+                        </ul>
+                </article>
+                <nav class="menu_inferior formato_footer">
+                    <ul>
+                      <li><a href="index.html">INICIO</a></li>
+                      <li><a href="evento.html">EVENTO</a></li>
+                      <li><a href="resumen.html">RESUMEN</a></li>
+                      <li><a href="personalizacion.html">PERSONALIZACION</a></li>
+                      <li><a href="inscripcion.html">INSCRIPCION</a></li>
+                      <li><a href="contacto.html">CONTACTO</a></li>
+                    </ul>
+                </nav>
+
+                <article class="redes_sociales formato_footer">
+                    <h3>Redes Sociales</h2>
+                        <figure>
+                            <a href="#">
+                                <img src="./imgs/facebook.png">
+                            </a>
+                            <a href="#">
+                                <img src="./imgs/twitter.png">
+                            </a>
+                            <a href="#">
+                                <img src="./imgs/instagram.png">
+                            </a>
+                            <a href="#">
+                                <img src="./imgs/youtube.png">
+                            </a>
+                        </figure>
+                </article>
+            </section>
+
+        </footer>
+        <!---------------------------------------FIN DEL FOOTER------------------------------------------------->
+
+    </body>
+
+    </html>

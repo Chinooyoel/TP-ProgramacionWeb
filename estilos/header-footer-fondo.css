@@ -36,10 +36,10 @@ textarea {
 input:focus {
     border: 2px solid #666666;
 }
-input[type="submit"], .botom
+input[type="submit"], .botom, button
 {
     background: #eac04a;
-    border-color:  #eac04a;
+    border-color:  grey;
     padding: 5px;
     border-radius: 10px;
     font-weight: 900; /*pone la letra en negrita*/
@@ -94,6 +94,10 @@ header img {
     border-radius: 50%;
     /*Para que sea redondo*/
     position: absolute;
+    transform: translate(-30%, 0);
+    -ms-transform: translate(-30%, 0);
+    -webkit-transform: translate(-30%, 0);
+    -moz-transform: translate(-30%, 0);
     top: 0px;
     padding: 3px;
     font-size: 1.4em;
@@ -103,7 +107,8 @@ header img {
 /*------------------------------MENU NAV PRINCIPAL --------------*/
 
 .menu_principal ul {
-    background: #eac04a;
+
+    background-color: #383838;
     width: 100%;
     text-align: center;
     box-shadow: 3px 3px 10px #666666;
@@ -119,7 +124,7 @@ header img {
     text-align: center;
     padding: 10px;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .menu_principal a:hover {
@@ -157,7 +162,7 @@ footer {
 }
 
 .menu_inferior li a:hover {
-    color: grey;
+    color: #eac04a;
 }
 
 .redes_sociales
