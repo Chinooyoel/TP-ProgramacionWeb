@@ -14,25 +14,28 @@
 
 }
 .imagen{
+    display: flex;
+    position: relative;
     background-color : grey;
-    min-width:400px;
-    height : 400px;
+    height:  50vh;
+    width:  50vw;
+    justify-content: center;
+    align-items: center;
     margin:auto;
-    position : relative;
-  }
+}
 .edicion{
     padding: 10px;
     width: 50%;
     margin:auto;
 }
 
-div.bloque_titulo{
+/*div.bloque_titulo{
     position : absolute;
     top :50%;
     transform: translate(0, -60%);
     width: 100%;
     text-align: center;
-}
+}*/
 .margin_auto{
   margin:auto;
   color: red;
@@ -85,26 +88,26 @@ background: blue;
 }
 .px20{
   display: inline-block;
-  font-size: 10px;
+  font-size: 1.3vh;
 }
 
 .px28{
-  font-size: 12px;
+  font-size: 1.6vh;
 }
 
 .px32{
-  font-size: 14px;
+  font-size: 1.8vh;
 }
 
 .px48{
-  font-size: 16px;
+  font-size: 2vh;
 }
 
 .px60{
-  font-size: 18px;
+  font-size: 2.2vh;
 }
 .subtitulos{
-  font-size: 14px;
+  font-size:1.8vh;
   color: grey;
 }
 
@@ -116,8 +119,7 @@ background: blue;
     text-align: center;
   }
   .contenedor_izq{
-      width: 80%;
-      margin:auto;
+      width: 100%;
   }
   .align_center{
     width: 100%;
@@ -125,5 +127,11 @@ background: blue;
   .edicion{
     width: 100%;
   }
+  .imagen{
+      height:  40vh;
+      width:  100%;
+
+  }
+
 
 }

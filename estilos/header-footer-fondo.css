@@ -125,6 +125,9 @@ header img {
     padding: 10px;
     text-decoration: none;
     color: white;
+
+    font-size: 16px;
+
 }
 
 .menu_principal a:hover {
@@ -154,6 +157,9 @@ footer {
 .menu_inferior li {
     list-style: none;
     display: inline-block;
+
+    font-size: 14px;
+
 }
 
 .menu_inferior li a {
