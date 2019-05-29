@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Eventos Sociales</title>
+    <meta charset="UTF-8">
+    <!--meta viewport sirve para celulares, el width para que ocupe todo el ancho del viewport(pantalla)
+         y el initial-scale es el nivel de zoom que va atener la pagina cuando cargue-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./estilos/header-footer-fondo.css" rel="stylesheet">
+    <link href="./estilos/estilosindex.css" rel="stylesheet">
+    <link href="./estilos/estilosevento.css" rel="stylesheet">
+    <link href="./estilos/estilosinscripcion.css" rel="stylesheet">
+    <link rel="icon" href="./imgs/logo.ico">
+
+</head>
+
+<body>
+
+   <!---------------------------------------INICIO HEADER------------------------------------------------->
+    <header class="contenedor">
+        <section>
+            <article class="ancho25 logo">
+                <img src="./imgs/logo.jpg">
+            </article>
+            <article class="ancho50 busqueda">
+                <input type="text">
+            </article>
+            <article class="ancho25">
+                <img src="./imgs/ticketicono.png">
+                <span id="tickets_comprados">0</span>
+            </article>
+        </section>
+    </header>
+    <!---------------------------------------FIN HEADER------------------------------------------------->
+    <!---------------------------------------INICIO NAV------------------------------------------------->
+    <nav class="menu_principal">
+        <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="evento.html">EVENTO</a></li>
+            <li><a href="resumen.html">RESUMEN</a></li>
+            <li><a href="personalizacion.html">PERSONALIZACION</a></li>
+            <li><a href="inscripcion.html">INSCRIPCION</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+          </ul>
+    </nav>
+    <!---------------------------------------FIN NAV------------------------------------------------->
+
+    <section class="seccion_inscripcion contenedor">
+        <h2>TITULO EVENTO</h2>
+        <form>
+            <fieldset>
+                <legend>INSCRIPCION</legend>
+                <div class="celdas">
+                    <input type="text">
+                    <input type="text">
+                    <input type="text">
+                    <img src="imgs/iconosuma.png" class="boton_redondo">
+                </div>
+                <div class="celdas">
+                    <input type="text">
+                    <input type="text">
+                    <input type="text">
+                    <img src="imgs/iconosuma.png" class="boton_redondo">
+                </div>
+                <div class="celdas">
+                    <input type="text">
+                    <input type="text">
+                    <input type="text">
+                    <img src="imgs/iconosuma.png" class="boton_redondo">
+                </div>
+            </fieldset>
+            <div>
+                <img src="imgs/iconomenos.png" class="boton_redondo">
+                <span>Agregar Persona</span>
+            </div>
+            <div>
+                <span>$000.-</span>
+                <button>INSCRIBIRSE</button>
+            </div>            
+        </form>
+
+    </section>
+    <!---------------------------------------INICIO DEL FOOTER------------------------------------------------->
+    <footer>
+        <section class="contenedor">
+            <article class="datos_grupo formato_footer">
+                <h3>Integrantes</h2>
+                    <ul>
+                        <li>Axel de Arias</li>
+                        <li>Carlos Yoel Carcamo Lopez</li>
+                    </ul>
+            </article>
+            <nav class="menu_inferior formato_footer">
+                <ul>
+                  <li><a href="index.html">INICIO</a></li>
+                  <li><a href="evento.html">EVENTO</a></li>
+                  <li><a href="resumen.html">RESUMEN</a></li>
+                  <li><a href="personalizacion.html">PERSONALIZACION</a></li>
+                  <li><a href="inscripcion.html">INSCRIPCION</a></li>
+                  <li><a href="contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+
+            <article class="redes_sociales formato_footer">
+                <h3>Redes Sociales</h2>
+                    <figure>
+                        <a href="#">
+                            <img src="./imgs/facebook.png">
+                        </a>
+                        <a href="#">
+                            <img src="./imgs/twitter.png">
+                        </a>
+                        <a href="#">
+                            <img src="./imgs/instagram.png">
+                        </a>
+                        <a href="#">
+                            <img src="./imgs/youtube.png">
+                        </a>
+                    </figure>
+            </article>
+        </section>
+
+    </footer>
+    <!---------------------------------------FIN DEL FOOTER------------------------------------------------->
+
+</body>
+
+</html>

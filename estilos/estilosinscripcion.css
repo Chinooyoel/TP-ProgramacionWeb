@@ -1,0 +1,14 @@
+.celdas  input{
+    width: 30%;
+    margin: 10px;
+}
+
+.boton_redondo{
+    border-radius: 50%;
+    width: 30px;
+    background:  #eac04a;
+    cursor: pointer;
+}
+.seccion_inscripcion{
+    margin-top: 20px;
+}
