@@ -51,58 +51,6 @@ position:relative;
 }
 
 
-/*-----------------------SeccionEventos-------------*/
-
-.seccion_eventos
-{
-    margin-top: 50px;
-
-    /* Propiedades FLEX */
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: space-around;
-
-}
-
-.iconocomprar
-{
-    width: 10px;
-    height: 15px;
-}
-
-.eventos_destacados
-{
-    min-width: 300px;
-    width: 30%;
-    border: 2px solid #666666;
-    padding: 10px;
-    margin:5px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.eventos_destacados img
-{
-    width : 100%;
-    box-shadow: 3px 3px 10px #666666;
-    opacity: 0.8;
-}
-
-.eventos_destacados img:hover
-{
-    opacity: 1.0;
-}
-.date
-{
-    width: 30%;
-    display: inline-block; /*para que se pongan al lado con .detalle_evento*/
-    font-size: 1.3em;
-}
-.detalle_evento
-{
-    width: 60%;
-    display: inline-block;  /*para que se ponga al lado con .date*/
-}
 
 /*------------------------Seccion medios de pagos--------------*/
 

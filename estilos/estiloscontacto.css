@@ -26,11 +26,7 @@ textarea
 {
     background: #b1b1b1;
 }
-iframe
-{
-    width: 100%;
-    height: 300px;
-}
+
 
 @media (max-width: 768px)
 {

@@ -104,32 +104,6 @@ header img {
 }
 
 
-/*------------------------------MENU NAV PRINCIPAL --------------*/
-/*
-.menu_principal ul {
-
-    background-color: #383838;
-    width: 100%;
-    text-align: center;
-    box-shadow: 3px 3px 10px #666666;
-}
-
-.menu_principal li {
-    list-style: none;
-    display: inline-block;
-}
-
-.menu_principal li a {
-    display: block;
-    text-align: center;
-    padding: 10px;
-    text-decoration: none;
-    color: white;
-
-    font-size: 16px;
-
-}
-*/
 .menu_principal{
     
     display: flex ;
@@ -190,7 +164,65 @@ border-radius: 100%;
     border : 2px solid red;
 }
 
+/*------------------------------ESTILO MAPA IFRAMES-------------------------------*/
+iframe
+{
+    width: 100%;
+    height: 300px;
+}
 
+/*-----------------------SeccionEventos-------------*/
+
+.seccion_eventos
+{
+    margin-top: 50px;
+
+    /* Propiedades FLEX */
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.iconocomprar
+{
+    width: 10px;
+    height: 15px;
+}
+
+.eventos_destacados
+{
+    min-width: 300px;
+    width: 30%;
+    border: 2px solid #666666;
+    padding: 10px;
+    margin:5px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.eventos_destacados img
+{
+    width : 100%;
+    box-shadow: 3px 3px 10px #666666;
+    opacity: 0.8;
+}
+
+.eventos_destacados img:hover
+{
+    opacity: 1.0;
+}
+.date
+{
+    width: 30%;
+    display: inline-block; /*para que se pongan al lado con .detalle_evento*/
+    font-size: 1.3em;
+}
+.detalle_evento
+{
+    width: 60%;
+    display: inline-block;  /*para que se ponga al lado con .date*/
+}
 
 /*-------------------------------FOOTER----------------*/
 

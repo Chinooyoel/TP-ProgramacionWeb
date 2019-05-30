@@ -1,0 +1,23 @@
+.seccion_detalle{
+    margin-top: 20px;
+    /* PROPIEDADES FLEX*/
+    display: flex;
+}
+.seccion_detalle figure{
+    width: 50%;
+}
+.seccion_detalle figure img{
+    width: 80%;
+    margin: auto;
+}
+.seccion_detalle div{
+    width: 50%;
+}
+.seccion_detalle div p{
+    margin: 5px;
+}
+.seccion_eventos .eventos_destacados{
+    width: 20%;
+}
+
+

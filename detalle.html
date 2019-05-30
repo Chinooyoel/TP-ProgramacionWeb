@@ -8,7 +8,7 @@
          y el initial-scale es el nivel de zoom que va atener la pagina cuando cargue-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="./estilos/header-footer-fondo.css" rel="stylesheet">
-    <link href="./estilos/estilosindex.css" rel="stylesheet">
+    <link href="./estilos/estilosdetalle.css" rel="stylesheet">
     <link rel="icon" href="./imgs/logo.ico">
 
 </head>
@@ -32,45 +32,47 @@
     </header>
     <!---------------------------------------FIN HEADER------------------------------------------------->
 
+
     <!---------------------------------------INICIO NAV------------------------------------------------->
     <nav id ="nav" class="menu_principal">
-          <div><a href="index.html">Inicio</a></div>
-          <div><a href="evento.html">Evento</a></div>
-          <div><a href="resumen.html">Resumen</a></div>
-          <div><a href="detalle.html">Personalización</a></div>
-          <div><a href="inscripcion.html">Inscripción</a></div>
-          <div><a href="contacto.html">Contacto</a></div>
-          <div class= "close">
+        <div><a href="index.html">Inicio</a></div>
+        <div><a href="evento.html">Evento</a></div>
+        <div><a href="resumen.html">Resumen</a></div>
+        <div><a href="detalle.html">Personalización</a></div>
+        <div><a href="inscripcion.html">Inscripción</a></div>
+        <div><a href="contacto.html">Contacto</a></div>
+        <div class= "close">
             <a id="#close" class= "boton rojo"  href="#close">Cerrar</a>
-        </div>
-    </nav>
-    <div class = "open">
-        <a class="boton imagen_prin" href="#nav"><img src="./imgs/menu-icon.png"></a>
-    </div>
+      </div>
+  </nav>
+  <div class = "open">
+      <a class="boton imagen_prin" href="#nav"><img src="./imgs/menu-icon.png"></a>
+  </div>
     <!---------------------------------------FIN NAV------------------------------------------------->
-
-    <!---------------------------------------INICIO SECCION SLIDE------------------------------------------------->
-    <section class="slide">
-      <img src="imgs/iconoizquierda.png" class="iconos" id="boton_slide_izquierdo">
+    <section class="seccion_detalle contenedor">
         <figure>
-            <img class= "imagen_principal" src="imgs/concierto1.jpg">
+            <img src="imgs/acdc.jpg">
         </figure>
-        <img src="imgs/iconoizquierda.png" class="iconos" id="boton_slide_izquierdo">
-        <img src="imgs/iconoderecha.png" class="iconos" id="boton_slide_derecho">
-
+        <div>
+            <h2>AC/DC</h2>
+            <p>Fecha y hora: 27 de Julio, 20:00</p>
+            <p>Organizador: Pepsi Fest</p>
+            <p>Precio: $1200</p>
+            <p>
+                Descripccion del Evento: AC/DC es un grupo de hard rock australiano formado en 1973 en Sídney, Australia, 
+                por los hermanos de origen escocés Malcolm y Angus Young. Sus álbumes se han vendido en un total estimado de 200 millones de copias,
+                5​6​ embarcándose en giras multitudinarias por todo el mundo, y sus éxitos han musicalizado varias producciones cinematográficas sobresalientes.
+                Son famosas sus actuaciones en vivo, resultando vibrantes y exultantes espectáculos de primer orden.
+            </p>
+            <button class="boton">INSCRIPCION</button>
+        </div>
     </section>
-    <!---------------------------------------FIN SECCION SLIDE------------------------------------------------->
 
-    <!---------------------------------------INICIO SECCION PASOS------------------------------------------------->
-    <section class="seccion_pasos contenedor">
-        <h2>Pasos para Comprar</h2>
-        <article>PASO 1</article>
-        <article>PASO 2</article>
-        <article>PASO 3</article>
+    <section class="ubicacion contenedor">
+        <h2>Ubicacion</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.545424481879!2d-58.568013584328554!3d-34.640926066975815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7eff9e1e349%3A0x9b0c603039044574!2sAv.+de+Mayo%2C+Ramos+Mej%C3%ADa%2C+Buenos+Aires!5e0!3m2!1ses-419!2sar!4v1558670825704!5m2!1ses-419!2sar"  frameborder="0" style="border:0" allowfullscreen></iframe>
     </section>
-    <!---------------------------------------FIN SECCION PASOS------------------------------------------------->
 
-    <!---------------------------------------INICIO SECCION EVENTOS------------------------------------------------->
     <section class="seccion_eventos contenedor">
         <h2>Eventos Destacados</h2>
         <figure class="eventos_destacados">
@@ -120,54 +122,8 @@
                     $1200<button class="botom">Ver Detalles del Evento</button>
                 </div>
             </figcaption>
-            </figure>
-        <figure class="eventos_destacados">
-            <img src="./imgs/imaginedragons.jpg">
-            <figcaption>
-                <div class="date">
-                    DIC<br>1
-                </div>
-                <div class="detalle_evento">
-                    Imagine Dragons<br>
-                    $1200<button class="botom">Ver Detalles del Evento</button>
-                </div>
-            </figcaption>
         </figure>
-        <figure class="eventos_destacados">
-            <img src="./imgs/arjona.jpg">
-            <figcaption>
-                <div class="date">
-                    AGO<br>20
-                </div>
-                <div class="detalle_evento">
-                    Ricardo Arjona<br>
-                    $1200<button class="botom">Ver Detalles del Evento</button>
-                </div>
-            </figcaption>
-        </figure>
-
     </section>
-    <!---------------------------------------FIN SECCION EVENTOS------------------------------------------------->
-
-    <!---------------------------------------INICIO MEDIOS DE PAGOS------------------------------------------------->
-    <h2> Medios de Pago</h2>
-    <section class="seccion_medios_pago contenedor">
-        <img src="imgs/iconoizquierda.png" class="iconos">
-        <figure class="medios_pago">
-            <img src="imgs/visa.png">
-        </figure>
-        <figure class="medios_pago">
-            <img src="imgs/mastercard.png">
-        </figure>
-        <figure class="medios_pago">
-            <img src="imgs/pagofacil.png">
-        </figure>
-        <figure class="medios_pago">
-            <img src="imgs/paypal.png">
-        </figure>
-            <img src="imgs/iconoderecha.png" class="iconos">
-    </section>
-    <!---------------------------------------FIN MEDIOS DE PAGOS------------------------------------------------->
 
     <!---------------------------------------INICIO DEL FOOTER------------------------------------------------->
     <footer>
@@ -180,16 +136,14 @@
                     </ul>
             </article>
             <nav class="menu_inferior formato_footer">
-                <ul>
-                  <ul>
-                    <li><a href="index.html">INICIO</a></li>
-                    <li><a href="evento.html">EVENTO</a></li>
-                    <li><a href="resumen.html">RESUMEN</a></li>
-                    <li><a href="personalizacion.html">PERSONALIZACION</a></li>
-                    <li><a href="inscripcion.html">INSCRIPCION</a></li>
-                    <li><a href="contacto.html">CONTACTO</a></li>
-                  </ul>
-                </ul>
+              <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="evento.html">EVENTO</a></li>
+                <li><a href="resumen.html">RESUMEN</a></li>
+                <li><a href="personalizacion.html">PERSONALIZACION</a></li>
+                <li><a href="inscripcion.html">INSCRIPCION</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+              </ul>
             </nav>
 
             <article class="redes_sociales formato_footer">
@@ -217,3 +171,5 @@
 </body>
 
 </html>
+
+    
