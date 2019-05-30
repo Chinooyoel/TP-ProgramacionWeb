@@ -34,21 +34,25 @@
     <!---------------------------------------FIN HEADER------------------------------------------------->
 
     <!---------------------------------------INICIO NAV------------------------------------------------->
-    <nav class="menu_principal">
-        <ul>
-            <li><a href="index.html">INICIO</a></li>
-            <li><a href="evento.html">EVENTO</a></li>
-            <li><a href="resumen.html">RESUMEN</a></li>
-            <li><a href="personalizacion.html">PERSONALIZACION</a></li>
-            <li><a href="inscripcion.html">INSCRIPCION</a></li>
-            <li><a href="contacto.html">CONTACTO</a></li>
-          </ul>
-    </nav>
+    <nav id ="nav" class="menu_principal">
+        <div><a href="index.html">Inicio</a></div>
+        <div><a href="evento.html">Evento</a></div>
+        <div><a href="resumen.html">Resumen</a></div>
+        <div><a href="personalizacion.html">Personalización</a></div>
+        <div><a href="inscripcion.html">Inscripción</a></div>
+        <div><a href="contacto.html">Contacto</a></div>
+        <div class= "close">
+          <a class= "boton rojo"  href="#">Cerrar</a>
+      </div>
+  </nav>
+  <div class = "open">
+      <a class="boton imagen_prin" href="#nav"><img src="./imgs/menu-icon.png"></a>
+  </div>
     <!---------------------------------------FIN NAV------------------------------------------------->
 
     <div class = "evento_personalizado">
         <div class = "contenedor_izq">
-          <section class = "imagen">
+          <section class = "imagen_re">
               <div class = "bloque_titulo">
                   <p id = "titulo">TÍTULO</p>
                   </span>
@@ -66,7 +70,7 @@
             <p class = "subtitulos"><br>Color</span>
             <div>
                 <div class="opciones">
-                    <div class="colores  border_radius rojo">
+                    <div class="colores  border_radius rojo_ev">
                     </div>
                     <input type="radio" name ="color">
                 </div>
@@ -134,7 +138,7 @@
             <p class = "subtitulos">Fondo</p>
             <div>
                 <div class="opciones">
-                    <div class="colores rojo">
+                    <div class="colores rojo_ev">
                     </div>
                     <input type="radio" name ="color_fondo">
                 </div>
