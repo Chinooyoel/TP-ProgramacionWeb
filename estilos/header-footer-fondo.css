@@ -25,13 +25,14 @@
 input:not([type="submit"]) ,
 textarea {
     width: 80%;
-    background: #fffbe2;
     padding: 6px;
     border-radius: 4px;
     margin-top: 8px;
-    border: 2px solid #eac04a;
 }
-
+input:not([type="submit"]):not([type="radio"]){
+border: 2px solid #eac04a;
+background: #fffbe2;
+}
 
 input:focus {
     border: 2px solid #666666;
