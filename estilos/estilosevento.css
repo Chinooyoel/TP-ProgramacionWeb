@@ -13,7 +13,7 @@
   text-align: center;
 
 }
-.imagen{
+.imagen_re{
     display: flex;
     position: relative;
     background-color : grey;
@@ -67,7 +67,7 @@ div.bloque_fecha{
 
   border-radius: 50%;
 }
-.rojo{
+.rojo_ev{
     background: red;
 }
 .azul
@@ -127,7 +127,7 @@ background: blue;
   .edicion{
     width: 100%;
   }
-  .imagen{
+  .imagen_re{
       height:  40vh;
       width:  100%;
 

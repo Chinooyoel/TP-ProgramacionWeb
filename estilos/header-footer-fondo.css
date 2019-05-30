@@ -105,7 +105,7 @@ header img {
 
 
 /*------------------------------MENU NAV PRINCIPAL --------------*/
-
+/*
 .menu_principal ul {
 
     background-color: #383838;
@@ -129,10 +129,67 @@ header img {
     font-size: 16px;
 
 }
+*/
+.menu_principal{
+    
+    display: flex ;
+    justify-content: center;
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: 2;
+    top:0;
+    left: 0;
+    background: black;
+    flex-wrap: wrap;
+    width: 100%;
+}
 
-.menu_principal a:hover {
+
+.menu_principal > div > a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.menu_principal a:hover:not(.imagen_prin), .boton:hover:not(.imagen_prin) {
     background: #d2a21b;
 }
+.close{
+    display: none;
+} 
+.open{
+    z-index: 2;
+    display: none;
+}
+#nav:target {
+    left: 0px;
+}
+a.boton{
+    padding: 4px;
+    text-decoration:none;
+    display: inline-block;
+    border-radius: 100%;
+}
+.open > a > img{
+width: 100%;
+border: 1px solid black;
+border-radius: 100%;
+}
+.open >a>img:hover{
+    opacity: 1;
+    
+    border: 3px solid black;
+    cursor: pointer;
+}
+
+.rojo{
+    color:red;
+    border : 2px solid red;
+}
+
 
 
 /*-------------------------------FOOTER----------------*/
@@ -202,9 +259,37 @@ footer {
 
 @media (max-width: 768px)
 {
-    header img{
-        width: 50px;
+
+    .menu_principal{
+        position: fixed;
+        z-index: 3;
+        width: 60%;
+        height: 100vh;
+        left: -100%;
     }
+    .menu_principal > div{
+        width: 100%;
+    }
+    
+    .open{
+        display: block;
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0px;
+        left: 1px;
+        width: 45px;
+    }
+    
+    .close{
+        display: block;
+        width: 40px;
+        text-align: center;
+    }
+    .close > a{
+        display: inline-block!important;
+        margin:auto;
+    } 
+    
   .iconos {
       width: 40px;
       height: 40px;
