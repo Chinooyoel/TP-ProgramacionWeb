@@ -43,8 +43,10 @@
 div.bloque_fecha{
     position: absolute;
     bottom: 0px;
-    padding: 2%;
+    right: 0px;
+    width: 100%;
     text-align: right;
+    padding: 2%;
 }
 .opciones{
   display: inline-block;
