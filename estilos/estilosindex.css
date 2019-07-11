@@ -1,30 +1,10 @@
 
 /*------------------------------SECCION SLIDE -----------------*/
-
-.imagen_principal
-{
+.slide img {
     width: 100%;
-    /* Para que ocupe 90% de la ventana o pantalla donde se ve*/
-    position: relative;
-    /*Para que no se pixelee la imagen al hacerse responsive*/
-    object-fit: cover;
-}
-.slide {
-position:relative;
-
-}
-#boton_slide_derecho
-{
-    position: absolute;
-    top: 50%;
-    right: 2%;
-}
-
-#boton_slide_izquierdo
-{
-    position: absolute;
-    top: 50%;
-    left: 2%;
+    height: 100%;
+     /*Para que no se pixelee la imagen al hacerse responsive*/
+     object-fit: cover;
 }
 
 
