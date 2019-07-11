@@ -11,6 +11,18 @@
     <link href="./estilos/estilosindex.css" rel="stylesheet">
     <link rel="icon" href="./imgs/logo.ico">
 
+    <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.bxslider.js"></script>
+        <link rel="stylesheet" href="estilos/jquery.bxslider.css">
+        <script type="text/javascript">
+            $(document).ready(function(){
+
+                $('.bxslider').bxSlider({
+                    mode: 'fade'
+                });
+            });
+    </script>
+
 </head>
 
 <body>
@@ -51,13 +63,18 @@
 
     <!---------------------------------------INICIO SECCION SLIDE------------------------------------------------->
     <section class="slide">
-      <img src="imgs/iconoizquierda.png" class="iconos" id="boton_slide_izquierdo">
+      <!--<img src="imgs/iconoizquierda.png" class="iconos" id="boton_slide_izquierdo">
         <figure>
             <img class= "imagen_principal" src="imgs/concierto1.jpg">
         </figure>
         <img src="imgs/iconoizquierda.png" class="iconos" id="boton_slide_izquierdo">
         <img src="imgs/iconoderecha.png" class="iconos" id="boton_slide_derecho">
-
+    --> 
+        <ul class="bxslider">
+            <li><img src="imgs/concierto1.jpg" /></li>
+            <li><img src="imgs/concierto2.jpg" /></li>
+            <li><img src="imgs/concierto3.jpg" /></li>
+        </ul>
     </section>
     <!---------------------------------------FIN SECCION SLIDE------------------------------------------------->
 
