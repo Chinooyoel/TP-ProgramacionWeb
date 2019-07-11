@@ -10,6 +10,8 @@
     <link href="./estilos/header-footer-fondo.css" rel="stylesheet">
     <link href="./estilos/estiloscontacto.css" rel="stylesheet">
     <link rel="icon" href="./imgs/logo.ico">
+    <script src ="./js/jquery-3.4.1.min.js"></script>
+    <script src ="./js/contacto.js"></script>
 
 </head>
 
@@ -48,24 +50,36 @@
       <a class="boton imagen_prin" href="#nav"><img src="./imgs/menu-icon.png"></a>
   </div>
     <!---------------------------------------FIN NAV------------------------------------------------->
-    <section class="seccion_contacto contenedor">
+    <div class="seccion_contacto contenedor">
         <h2>Contacto</h2>
-        <article class="formulario">
+        <section class="formulario">
             <form>
                 <label>Nombre:</label>
-                <input type="text" placeholder="Ingrese su nombre aqui">
+                <input id="nombre" type="text" placeholder="Ingrese su nombre aqui">
                 <label>Apellido:</label>
-                <input type="text" placeholder="Ingrese su apellido aqui">
+                <input id="apellido" type="text" placeholder="Ingrese su apellido aqui">
                 <label>E-mail:</label>
-                <input type="email" placeholder="Ingrese su email aqui">
-                <label>Descripcion:</label>
-                <textarea placeholder="Descripcion aqui"></textarea>
+                <input id="mail" type="email" placeholder="Ingrese su email aqui">
+                <label>Teléfono:</label>
+                <input id="tel" type="email" placeholder="Ingrese su teléfono aqui">
+                <label>Descripcion: <span id="car"></span> </label>
+                <textarea id="parrafo" placeholder="Descripcion aqui"></textarea>
+                <input id="validar" type="submit" onclick='return false;' name ="color" value = "Confirmar">
             </form>
-        </article>
-        <article class="info_empresa">
-            <p>Datos de contacto</p>
-        </article>
-    </section>
+            <section id="errores">
+            </section>
+        
+        </section>
+       
+        <section class="info_empresa">
+            <p>Año: 2019</p>
+            <p>Año: Universidad Nacional de la Matanza</p>
+            <p>Materia: Programación Web 1</p>
+            <p>Alumnos: Axel de Arias y Carlos Yoel Carcamo Lopez</p>
+            <p>Nombre del Proyecto: TP FINAL</p>
+        </section>
+    </div>
+    
 
     <section class="ubicacion contenedor">
         <h2>Ubicacion</h2>

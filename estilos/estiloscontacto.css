@@ -5,7 +5,13 @@
     display: flex;
     flex-wrap: wrap;
 }
-.seccion_contacto > article
+#errores{
+    text-align: center;
+}
+#errores > p{
+    color: red;
+}
+.seccion_contacto > section
 {
     width: 50%;
     padding: 20px;
@@ -25,12 +31,16 @@ textarea
 .info_empresa
 {
     background: #b1b1b1;
+
+}
+.info_empresa > p{
+    font-size: 20px;
 }
 
 
 @media (max-width: 768px)
 {
-.seccion_contacto > article
+.seccion_contacto > section
 {
     width: 100%;
 }
