@@ -7,9 +7,12 @@
     <!--meta viewport sirve para celulares, el width para que ocupe todo el ancho del viewport(pantalla)
          y el initial-scale es el nivel de zoom que va atener la pagina cuando cargue-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="./js/jquery-3.4.1.min.js"></script> 
     <link href="./estilos/header-footer-fondo.css" rel="stylesheet">
     <link href="./estilos/estilosevento.css" rel="stylesheet">
     <link rel="icon" href="./imgs/logo.ico">
+    <script src="js/codigojs.js"></script>
+    <script src="js/eventojs.js"></script>
 
 </head>
 
@@ -57,7 +60,7 @@
                   </span>
               </div>
               <div class = "bloque_fecha">
-                  <h4>10 de junio de 2018,  18hs</span>
+                  <h4 id="date_img">2018-06-12 19:30</span>
               </div>
           </section>
             <h3> Vista Previa de Resultado de Personalizacion<br></h3>
@@ -65,73 +68,73 @@
         <section class = "edicion">
             <h3>Personalización de Invitación</h3>
             <form>
-            <input type = "text" placeholder="Título Evento" id="editar_titulo">
+            <input type = "text" placeholder="TÍTULO" id="editar_titulo">
             <p class = "subtitulos"><br>Color</span>
             <div>
                 <div class="opciones">
                     <div class="colores  border_radius rojo_ev">
                     </div>
-                    <input type="radio" name ="color">
+                    <input type="radio" value = "red" name ="color">
                 </div>
                 <div class="opciones">
                     <div class="colores  border_radius naranja">
                     </div>
-                    <input type="radio" name ="color">
+                    <input type="radio" value = "orange" name ="color">
                 </div>
                 <div class="opciones">
                     <div class="colores  border_radius black">
                     </div>
-                    <input type="radio" name ="color">
+                    <input type="radio" value = "black" name ="color">
                 </div>
                 <div class="opciones">
                     <div class="colores  border_radius amarillo">
                     </div>
-                    <input type="radio" name ="color">
+                    <input type="radio" value = "yellow" name ="color">
                 </div>
                 <div class="opciones">
                     <div class="colores  border_radius azul">
                     </div>
-                    <input type="radio" name ="color">
+                    <input type="radio" value = "blue" name ="color">
                 </div>
             </div>
             <p class = "subtitulos">Tamaño de fuente</p>
             <div>
                 <div class="opciones">
                     <span class = "px20" >20px</span>
-                    <input type="radio" name ="fuente">
+                    <input type="radio" value ="20" name ="fuente">
                 </div>
                 <div class="opciones">
                     <span class = "px28" >28px</span>
-                    <input type="radio" name ="fuente">
+                    <input type="radio" value ="28" name ="fuente">
                 </div>
                 <div class="opciones">
                       <span class = "px32" >32px</span>
-                      <input type="radio" name ="fuente">
+                      <input type="radio" value ="32" name ="fuente">
                 </div>
                 <div class="opciones">
                   <span class = "px48" >48px</span>
-                  <input type="radio" name ="fuente">
+                  <input type="radio" value ="48" name ="fuente">
                 </div>
                 <div class="opciones">
                   <span class = "px60" >60px</span>
-                  <input type="radio" name ="fuente">
+                  <input type="radio" value ="60" name ="fuente">
                 </div>
             </div>
-            <input type = "datetime" placeholder="Fecha y hora">
+            <input id = "data_time" value ="2018-06-12T19:30" type = "datetime-local" >
 
             <p class = "subtitulos"><br>Ubicación</p>
             <div>
                 <div class="opciones">
                   <img src="./imgs/inferior-derecho.png">
-                  <input type="radio" name ="subtitulo">
+                  <input type="radio" value="1"name ="subtitulo">
                 </div>
                 <div class="opciones">
                   <img src="./imgs/arriba-a-la-izquierda.png">
-                  <input type="radio" name ="subtitulo">
+                  <input type="radio" value="2" name ="subtitulo">
                 </div>
                 <div class="opciones">
                   <img src="./imgs/superior-derecha.png">
-                  <input type="radio" name ="subtitulo">
+                  <input type="radio" value="3" name ="subtitulo">
                 </div>
             </div>
             <p class = "subtitulos">Fondo</p>
@@ -139,27 +142,27 @@
                 <div class="opciones">
                     <div class="colores rojo_ev">
                     </div>
-                    <input type="radio" name ="color_fondo">
+                    <input type="radio" value="red" name ="color_fondo">
                 </div>
                 <div class="opciones">
                     <div class="colores naranja">
                     </div>
-                    <input type="radio" name ="color_fondo">
+                    <input type="radio" value="orange" name ="color_fondo">
                 </div>
                 <div class="opciones">
                     <div class="colores black">
                     </div>
-                    <input type="radio" name ="color_fondo">
+                    <input type="radio" value="black" name ="color_fondo">
                 </div>
                 <div class="opciones">
                     <div class="colores amarillo">
                     </div>
-                    <input type="radio" name ="color_fondo">
+                    <input type="radio" value="yellow" name ="color_fondo">
                 </div>
                 <div class="opciones">
                     <div class="colores azul">
                     </div>
-                    <input type="radio" name ="color_fondo">
+                    <input type="radio" value="blue" name ="color_fondo">
                 </div>
 
             </div>

@@ -1,19 +1,33 @@
-var contador = window.localStorage;
-contador.setItem("tickets",0);
+
+
+$(document).ready(function(){
+    var miStorage = window.localStorage;
+    var cantidadTicket = miStorage.getItem("tickets");
+    $("#tickets_comprados").html(cantidadTicket);
+    $(".inscribir").click(function(evn){
+        sumarContador();
+    });
+});
+
+
 
 function sumarContador(){
-    alert("hola")
-    var cantidadTicket = contador.getItem("tickets");
+    var miStorage = window.localStorage;
+    var cantidadTicket = miStorage.getItem("tickets");
     cantidadTicket ++;
-    document.getElementById("ticket").innerHTML = cantidadTicket;
-    contador.setItem("tickets",cantidadTicket);
-}
-function restarContador(){
-    var cantidadTicket = contador.getItem("tickets");
-    cantidadTicket --;
-    contador.setItem("tickets",cantidadTicket);
+    document.getElementById("tickets_comprados").innerHTML = cantidadTicket;
+    miStorage.setItem("tickets",cantidadTicket);
 }
 
-window.onload = () => {
-    document.getElementById("comprar").addEventListener("click", sumarContador());
+function ponerEnCeroElContador(){
+    var miStorage = window.localStorage;
+    miStorage.setItem("tickets", 0);
+    document.getElementById("tickets_comprados").innerHTML = cantidadTicket;
+}
+function restarContador(){
+    var miStorage = window.localStorage;
+    var cantidadTicket = miStorage.getItem("tickets");
+    cantidadTicket --;
+    document.getElementById("tickets_comprados").innerHTML = cantidadTicket;
+    miStorage.setItem("tickets",cantidadTicket);
 }
