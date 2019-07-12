@@ -35,7 +35,6 @@ $(document).ready(function(){
    })
 
    $("#data_time").change(function(){
-       alert("hola");
     $("#date_img").html(this.value.replace("T", "   "));
    })
 

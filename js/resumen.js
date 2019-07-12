@@ -21,5 +21,6 @@ $(document).ready(function(){
      
     })
     $("#total").html(sumar);
+    $("#precio").html(sumar);
   })
 })
