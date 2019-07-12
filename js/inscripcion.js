@@ -11,7 +11,11 @@ $(document).ready(function(){
    calcularSueldo();
     $("#agregar").click(function(){
         var pivot= $(".celdas").last();
-        var clon= $(".celdas").first();
+        //clonamos
+        var clon= $(".celdas").first().clone();
+        //limpiamos los inputs
+        $(clon).children().val("");
+        //insertamos
         $(clon).clone().insertAfter(pivot);
         calcularSueldo();      
     })               
