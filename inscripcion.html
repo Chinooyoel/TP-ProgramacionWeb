@@ -10,6 +10,8 @@
     <link href="./estilos/header-footer-fondo.css" rel="stylesheet">
     <link href="./estilos/estilosinscripcion.css" rel="stylesheet">
     <link rel="icon" href="./imgs/logo.ico">
+    <script src ="./js/jquery-3.4.1.min.js"></script>
+    <script src ="./js/inscripcion.js"></script>
 
 </head>
 
@@ -47,38 +49,43 @@
       <a class="boton imagen_prin" href="#nav"><img src="./imgs/menu-icon.png"></a>
   </div>
     <!---------------------------------------FIN NAV------------------------------------------------->
+    <div id="myModal" class="modal">
 
+        <!-- Modal -->
+        <div class="modal-content">
+        <h1>Personas Inscriptas</h1>
+        <div id ="ingresar_per">
+
+        </div>
+
+      </div>
+    </div>
     <section class="seccion_inscripcion contenedor">
         <h2>TITULO EVENTO</h2>
         <form>
             <fieldset>
                 <legend>INSCRIPCION</legend>
-                <div class="celdas">
+                <div class="celdas" >
                     <input type="text" placeholder="Ingrese su nombre aqui">
                     <input type="text" placeholder="Ingrese su apellido aqui">
                     <input type="text" placeholder="Ingrese su DNI aqui">
-                    <img src="imgs/iconomenos.png" class="boton_redondo">
+                    <img src="imgs/iconomenos.png" class="eliminar boton_redondo">
                 </div>
                 <div class="celdas">
                     <input type="text" placeholder="Ingrese su nombre aqui">
                     <input type="text" placeholder="Ingrese su apellido aqui">
                     <input type="text" placeholder="Ingrese su DNI aqui">
-                    <img src="imgs/iconomenos.png" class="boton_redondo">
+                    <img src="imgs/iconomenos.png" class="eliminar boton_redondo">
                 </div>
-                <div class="celdas">
-                    <input type="text" placeholder="Ingrese su nombre aqui">
-                    <input type="text" placeholder="Ingrese su apellido aqui">
-                    <input type="text" placeholder="Ingrese su DNI aqui">
-                    <img src="imgs/iconomenos.png" class="boton_redondo">
-                </div>
+               
             </fieldset>
             <div>
-                <img src="imgs/iconosuma.png" class="boton_redondo">
+                <img src="imgs/iconosuma.png" id ="agregar" class="boton_redondo">
                 <span>Agregar Persona</span>
             </div>
             <div>
-                <span id="valor_total">$000.-</span>
-                <button>INSCRIBIRSE</button>
+                <span id="valor_total"></span>
+                <input type="submit"  id="insc" value="INSCRIBIRSE"> 
             </div>            
         </form>
 
